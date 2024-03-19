@@ -7,6 +7,7 @@ public class GenerateAst {
     public static void main(String[] args) throws IOException {
         String outputDir = System.getProperty("user.dir");
         defineAst(outputDir, "Expr", Arrays.asList(
+            "Assign : Token name, Expr value",
             "Binary   : Expr left, Token operator, Expr right",
             "Grouping : Expr expression",
             "Literal  : Object value",
